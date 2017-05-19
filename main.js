@@ -187,7 +187,7 @@ document.addEventListener('touchend', function(event) {
 
     var deltax = endx - startx;
     var deltay = endy - starty;
-    if (Math.abs(deltax) < 0.3 * document_width && Math.abs(deltay) < 0.3 * document_width) {
+    if (Math.abs(deltax) < 0.15 * document_width && Math.abs(deltay) < 0.15 * document_width) {
         return;
     }
     if ($('#score').text() == success_string) {
